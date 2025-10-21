@@ -1,0 +1,3 @@
+- [ ] Add CSS rule for .skill-badge.white in style.css
+- [ ] Add 'Node.js' to skills array in script.js
+- [ ] Modify badge creation in script.js to add 'white' class for 'Node.js'
