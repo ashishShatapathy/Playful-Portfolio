@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <!-- Title (IMPORTANT for SEO & recruiters) -->
+  <title>Ashish Kumar Shatapathy | Java Backend Developer</title>
+
+  <!-- SEO Meta -->
+  <meta name="description"
+    content="Ashish Kumar Shatapathy - Java Backend Developer specializing in Spring Boot, REST APIs, and MySQL. Building scalable and secure backend systems." />
+  <meta name="keywords"
+    content="Java Developer, Spring Boot, Backend Developer, REST API, MySQL, JPA, JDBC, Ashish Shatapathy" />
+  <meta name="author" content="Ashish Kumar Shatapathy" />
+
+  <!-- Open Graph (LinkedIn / WhatsApp Preview) -->
+  <meta property="og:title" content="Ashish Kumar Shatapathy | Java Backend Developer" />
+  <meta property="og:description" content="Spring Boot | REST APIs | MySQL | Backend Developer Portfolio" />
+  <meta property="og:type" content="website" />
+
+  <!-- Theme Color (Mobile browser UI) -->
+  <meta name="theme-color" content="#0b0f1a" />
+
+  <!-- Favicon (optional but good) -->
+  <meta name="theme-color" content="#0b0f1a" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+</head>
+
+<body>
+  <!-- Particle canvas (background) -->
+  <canvas id="bgCanvas" class="bg-canvas" aria-hidden="true"></canvas>
+
+  <div class="site">
+    <header class="site-header">
+      <div class="brand">
+        <div class="logo">AS</div>
+        <div>
+          <h1>Ashish K. Shatapathy</h1>
+          <p class="muted">Java Backend Developer — Spring Boot · REST APIs · MySQL</p>
+        </div>
+      </div>
+      <button id="themeToggle" class="btn ghost">🌙</button>
+
+      <nav class="nav">
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-left">
+          <h2 class="eyebrow">Hi, I'm Ashish 👋</h2>
+          <h3 class="title">I build scalable backend systems & REST APIs</h3>
+          <p class="lead">
+            Java Backend Developer specializing in Spring Boot, REST APIs, and MySQL.
+            I build secure, scalable applications with clean architecture and efficient database design.
+          </p>
+
+          <div class="cta-row">
+            <button id="btnHire" class="btn primary">Hire Me</button>
+            <a id="downloadResume" class="btn ghost" role="button">Download Resume</a>
+            <a href="https://github.com/ashishShatapathy" target="_blank" rel="noopener" class="btn ghost">GitHub</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="card profile-card">
+            <div class="card-inner">
+              <div class="profile-name">Ashish K. Shatapathy</div>
+              <div class="profile-role">Java Backend Developer</div>
+              <ul class="contact-list">
+                <li>📍 Bhadrak, India</li>
+                <li>✉️ <a href="mailto:ashish.shatapathy01@gmail.com">ashish.shatapathy01@gmail.com</a></li>
+                <li>📱 +91 7735818985</li>
+              </ul>
+              <div class="skill-meter-mini">
+                <div class="meter-label">Java</div>
+                <div class="meter"><i class="fill" data-value="85"></i></div>
+              </div>
+              <div class="skill-meter-mini">
+                <div class="meter-label">Spring Boot</div>
+                <div class="meter"><i class="fill" data-value="90"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section">
+        <!-- <h3 class="section-title">Skills</h3>
+        <p class="muted">Interactive skill galaxy — click badges to highlight and boost the skill meter below.</p> -->
+
+        <h4 class="skill-category">Frontend</h4>
+        <div class="skill-cloud" id="frontendCloud">
+          <!-- frontend skill badges -->
+        </div>
+
+        <h4 class="skill-category">Backend</h4>
+        <div class="skill-cloud" id="backendCloud">
+          <!-- backend skill badges -->
+        </div>
+
+        <h4 class="skill-category">Tools</h4>
+        <div class="skill-cloud" id="toolsCloud">
+          <!-- tools skill badges -->
+        </div>
+
+        <div class="skill-meter-large" id="skillMeterWrap" aria-hidden="true">
+          <div class="meter-label">HireScore</div>
+          <div class="meter-large">
+            <i id="meterLargeFill"></i>
+          </div>
+          <div id="meterLargePct" class="muted">0% Match</div>
+          <div class="meter-actions">
+            <button id="generateBadge" class="btn primary">Generate Badge</button>
+            <button id="resetSkills" class="btn ghost">Reset</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section">
+        <h3 class="section-title">Projects</h3>
+        <!-- <p class="muted">Click any card to open a live demo modal. Source code links are included on each card.</p> -->
+
+        <div class="projects-grid">
+          <!-- Student Management System -->
+          <article class="project-card">
+            <h4>Student Management System</h4>
+            <p class="muted">
+              Built a RESTful web application using Spring Boot with CRUD operations,
+              authentication, and role-based authorization using Spring Security.
+            </p>
+            <div class="muted">Tech Stack: Java, Spring Boot, Spring Security, JPA, MySQL</div>
+            <div class="card-opts">
+              <a class="btn ghost small" href="https://github.com/ashishShatapathy/student-management-system" target="_blank">Code</a>
+            </div>
+          </article>
+
+          <!-- Bank Management System -->
+          <article class="project-card">
+            <h4>Bank Management System</h4>
+            <p class="muted">
+              Developed a banking system using Java and JDBC with features like account creation,
+              deposits, withdrawals, and transaction handling.
+            </p>
+            <div class="muted">Tech Stack: Java, JDBC, MySQL</div>
+            <div class="card-opts">
+              <a class="btn ghost small" href="https://github.com/ashishShatapathy" target="_blank">Code</a>
+            </div>
+          </article>
+
+          <!-- Tic-Tac-Toe -->
+          <article class="project-card" data-project="tictactoe">
+            <h4>Tic-Tac-Toe</h4>
+            <p class="muted">Vanilla JS game — game logic, UI updates and local score tracking.</p>
+            <div class="card-opts">
+              <a class="btn ghost small" data-open="tictactoe">Preview</a>
+              <a class="btn ghost small" href="https://github.com/ashishShatapathy/tic-tac-toe" target="_blank">Code</a>
+            </div>
+          </article>
+
+          <!-- Rock Paper Scissors -->
+          <article class="project-card" data-project="rps">
+            <h4>Stone-Paper-Scissor</h4>
+            <p class="muted">JS UI project with custom graphics and simple AI.</p>
+            <div class="card-opts">
+              <a class="btn ghost small" data-open="rps">Preview</a>
+              <a class="btn ghost small" href="https://github.com/ashishShatapathy/stone-paper-scissor" target="_blank">Code</a>
+            </div>
+          </article>
+
+          <!-- Weather -->
+          <article class="project-card" data-project="weather">
+            <h4>Weather Dashboard</h4>
+            <p class="muted">Responsive dashboard — replace placeholder with OpenWeatherMap API to fetch live data.</p>
+            <div class="card-opts">
+              <a class="btn ghost small" data-open="weather">Preview</a>
+              <a class="btn ghost small" href="https://github.com/ashishShatapathy/weather-dashboard"
+                target="_blank">Code</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ABOUT / EXPERIENCE -->
+      <section id="about" class="section">
+        <h3 class="section-title">About & Experience</h3>
+        <div class="two-col">
+          <div>
+            <h4>Experience</h4>
+            <div class="exp">
+              <strong>Frontend Developer Intern</strong>
+              <div class="muted">O2Faction — Jan 2025 - Aug 2025</div>
+              <ul class="muted">
+                <li>Built responsive interfaces using HTML, CSS, JS, Bootstrap, React.</li>
+                <li>Integrated REST APIs and dynamic UI components.</li>
+                <li>Improved cross-device performance and reduced dev time.</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <h4>Education</h4>
+            <div class="muted">
+              <strong>MCA</strong> — Unipower School of IT & Management (06/2023 - 08/2025)<br>
+              <strong>BCom</strong> — Atal Bihari College (2018 - 2021)
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section contact-section">
+        <h3 class="section-title">Contact</h3>
+        <p class="muted">Send me a message — the form uses EmailJS so you don't need a server. See script comments to
+          configure.</p>
+
+        <div class="contact-grid">
+          <form id="contactForm" class="contact-form" autocomplete="off">
+
+            <label>
+              <span class="label-text">Your name</span>
+              <input name="from_name" id="from_name" required />
+            </label>
+
+            <label>
+              <span class="label-text">Email</span>
+              <input name="from_email" id="from_email" type="email" required />
+            </label>
+
+            <label>
+              <span class="label-text">Message</span>
+              <textarea name="message" id="message" rows="5" required></textarea>
+            </label>
+
+            <div class="form-actions">
+              <button type="submit" id="sendBtn" class="btn primary">
+                Send Message
+              </button>
+
+              <button type="button" id="clearForm" class="btn ghost">
+                Clear
+              </button>
+            </div>
+
+            <!-- Status Message -->
+            <div id="contactStatus" class="muted"></div>
+
+          </form>
+        </div>
+      </section>
+
+      <!-- HIRING GAME -->
+      <section id="game" class="section">
+        <!-- <h3 class="section-title">Just For Fun</h3>
+        <p class="muted">A continuous bouncing ball demo — showcasing animations and effects for potential employers.</p> -->
+        <div class="game-container">
+          <canvas id="gameCanvas" width="600" height="400" aria-label="Interactive bouncing ball game"></canvas>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div>© <span id="year"></span> Ashish K. Shatapathy — Built with JS & ❤️</div>
+      </footer>
+    </main>
+
+    <!-- Project Demo Modal -->
+    <div class="modal" id="demoModal" aria-hidden="true">
+      <div class="modal-panel" role="dialog" aria-modal="true">
+        <button class="modal-close" id="closeDemo" aria-label="Close demo">✕</button>
+        <div id="demoContent" class="demo-content"></div>
+      </div>
+    </div>
+  </div>
+  <div id="toast" class="toast"></div>
+
+  <section class="section fade-in"></section>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
